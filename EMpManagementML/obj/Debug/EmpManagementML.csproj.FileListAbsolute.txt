@@ -1,0 +1,13 @@
+G:\ASP.NET\WebApplication1\EmpManagementML\bin\Debug\EmpManagementML.dll
+G:\ASP.NET\WebApplication1\EmpManagementML\bin\Debug\EmpManagementML.pdb
+G:\ASP.NET\WebApplication1\EmpManagementML\bin\Debug\Microsoft.AspNet.WebFormsDependencyInjection.Unity.dll
+G:\ASP.NET\WebApplication1\EmpManagementML\bin\Debug\System.Data.SqlClient.dll
+G:\ASP.NET\WebApplication1\EmpManagementML\bin\Debug\Unity.Abstractions.dll
+G:\ASP.NET\WebApplication1\EmpManagementML\bin\Debug\Unity.Container.dll
+G:\ASP.NET\WebApplication1\EmpManagementML\bin\Debug\Microsoft.AspNet.WebFormsDependencyInjection.Unity.xml
+G:\ASP.NET\WebApplication1\EmpManagementML\bin\Debug\System.Data.SqlClient.xml
+G:\ASP.NET\WebApplication1\EmpManagementML\obj\Debug\EmpManagementML.csprojAssemblyReference.cache
+G:\ASP.NET\WebApplication1\EmpManagementML\obj\Debug\EmpManagementML.csproj.CoreCompileInputs.cache
+G:\ASP.NET\WebApplication1\EmpManagementML\obj\Debug\EmpManagementML.csproj.CopyComplete
+G:\ASP.NET\WebApplication1\EmpManagementML\obj\Debug\EmpManagementML.dll
+G:\ASP.NET\WebApplication1\EmpManagementML\obj\Debug\EmpManagementML.pdb
