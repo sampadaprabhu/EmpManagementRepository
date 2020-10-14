@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en" class="master-html">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> Employee Management</title>
+    <link rel="stylesheet" href="/Content/CSS/EmployeeManagement.css" type="text/css" />
+    <link rel="stylesheet" href="/Content/CSS/AddEmployee.css" type="text/css" />
+    <link rel="stylesheet" href="/Content/CSS/UpdateEmployee.css" type="text/css" />
+    <link rel="stylesheet" href="/Content/CSS/ListOfEmployees.css" type="text/css" />
+    <script>
+        //function EditPop() {
+        //    window.open('Pages/UpdateEmployee.aspx')
+        //}
+        function ChangeColor() {
+            //document.getElementById('selectMenuAdd').style.backgroundColor = '#000000';
+            //document.getElementById('selectMenuAdd').style.height = '70px';
+            //document.getElementById('selectMenuAdd').style.borderRadius = '0px 30px 30px 0px';
+            document.getElementById("selectMenuAdd").className = "side-nav-color-change";
+        }
+
+        function ChangeColorList() {
+            //document.getElementById('selectMenuList').style.backgroundColor = '#000000';
+            //document.getElementById('selectMenuList').style.height = '70px';
+            //document.getElementById('selectMenuList').style.borderRadius = '0px 30px 30px 0px';
+            document.getElementById("selectMenuList").className = "side-nav-color-change";
+        }
+    </script>
+</head>
+<body class="master-body">
+    <form runat="server" class="master-form">
+        <div class="master-div">
+            <div class="nav-bar">
+                <h1 class="nav-bar-header">Employee Management System</h1>
+            </div>
+            <div class="display-content">
+                <div class="side-nav-bar">
+                    <div class="select-menu" id="selectMenuAdd" onclick="ChangeColor()">
+                        <a ID="addEmployee" runat="server" onserverclick="btnAddEmployee_Click" class="anchor">Add Employee</a>  
+                    </div>
+                    <hr class="divider" />
+                    <div class="select-menu" id="selectMenuList" onclick="ChangeColorList()">
+                        <a href="/pages/listofemployees.aspx" class="anchor">Employee List</a>
+                    </div>
+                </div>
+                <div class="parag">
+                   <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                     </asp:ContentPlaceHolder>
+               </div>
+            </div>
+        </div>     
+    </form>  
+</body>
+</html>

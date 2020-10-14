@@ -1,0 +1,31 @@
+﻿.nav-html {
+    min-height: 100%;
+}
+.nav-body {
+    min-height: 100%;
+    margin: 0px;
+}
+.nav-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.employee-management {
+    width: 100%;
+    min-height: 100%;
+}
+.navbar{
+    width:100%;
+    background-color:#1a73e8;
+}
+.emp-label{
+    margin-left:40%;
+    margin-top:20px;
+    display:flex;
+}
+.emp-lbl{
+    margin-top:18px;
+    font-size:40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

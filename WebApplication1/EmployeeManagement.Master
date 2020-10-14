@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EmployeeManagement.master.cs" Inherits="WebApplication1.EmployeeManagement" %>
+
+<!DOCTYPE html>
+
+<html class="master-html">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="../Content/CSS/EmployeeManagement.css" type="text/css" />
+    <style type="text/css">
+        .nav-bar-header {
+            height: 0px;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body class="master-body">
+    <form id="form1" runat="server" class="master-form">
+        <div class="master-div">
+            <div class="nav-bar">
+                <asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+                    <h2 class="nav-bar-header"> Employee Management System</h2>
+                </asp:Content> 
+            </div>
+        </div>
+    </form>
+</body>
+</html>`
