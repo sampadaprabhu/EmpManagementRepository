@@ -18,9 +18,9 @@
 }
 .update-main-div {
     width: 45%;
-    height: 550px;
+    height: 450px;
     margin-left: 20%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .update-header-content{
     margin-left:33%;
@@ -39,7 +39,7 @@
     justify-content: center;
 }
 .update-sub-content{
-    margin-top:35px;
+    margin-top:20px;
 }
 .update-lbl-one, .update-lbl-two, .update-lbl-three, 
 .update-lbl-four, .update-lbl-five, .update-lbl-six{
