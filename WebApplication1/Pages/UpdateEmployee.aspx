@@ -23,7 +23,7 @@
                                 <asp:Label ID="EmpIDUpdateLabel" Text="Employee ID : " runat="server" class="update-lbl-one" />
                             </td>
                             <td>
-                                <asp:TextBox ID="EmpIDUpdateTextBox" runat="server"  class="update-textbox-one" />
+                                <asp:TextBox ID="EmpIDUpdateTextBox" runat="server"  class="update-textbox-one" ReadOnly="true" />
                             </td>
                         </tr>
                         <tr>

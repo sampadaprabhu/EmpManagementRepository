@@ -48,7 +48,7 @@ namespace EmpManagementRL
             }
         }
 
-        public EmpManagementModel UpdateEmployee(EmpManagementModel empManagementModel)
+        public bool UpdateEmployee(EmpManagementModel empManagementModel)
         {
             try
             {
@@ -67,9 +67,9 @@ namespace EmpManagementRL
                     this.connection.Close();
                     if(result != 0)
                     {
-                        return this.GetEmployeeOnBasisfEmpID(empManagementModel.EmpID);
+                        return true;
                     }
-                    return null;
+                    return false;
                 }
             }
             catch(Exception e)

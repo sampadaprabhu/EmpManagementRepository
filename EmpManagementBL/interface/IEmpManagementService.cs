@@ -12,7 +12,7 @@ namespace EmpManagementBL.implementation
     {
         EmpManagementModel AddEmployee(EmpManagementModel empManagementModel);
 
-        EmpManagementModel UpdateEmployee(EmpManagementModel empManagementModel);
+        bool UpdateEmployee(EmpManagementModel empManagementModel);
 
         bool DeleteEmployee(string EmpID);
 

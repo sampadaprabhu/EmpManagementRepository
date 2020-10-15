@@ -45,7 +45,7 @@ namespace EmpManagementBL
             }
         }
 
-        public EmpManagementModel UpdateEmployee(EmpManagementModel empManagementModel)
+        public bool UpdateEmployee(EmpManagementModel empManagementModel)
         {
             try
             {

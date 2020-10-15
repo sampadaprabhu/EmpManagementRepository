@@ -3,7 +3,7 @@
     
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" class="table-html">
+<html class="table-html">
 <%--<head runat="server">
     <title></title>
     <link rel="stylesheet" href="../Content/CSS/ListOfEmployees.css" type="text/css" />
@@ -21,7 +21,7 @@
                     OnRowUpdating="GridView_RowUpdating" 
                     DataKeyNames="EmpID" OnRowDeleting="GridView_RowDeleting" 
                     AutoGenerateColumns="false" ForeColor="#333333" 
-                    GridLines="None">
+                    GridLines="None" OnRowCommand="GridView_RowCommand">
                     <AlternatingRowStyle BackColor="White" />
                     <EditRowStyle BackColor="#2461BF" />
                     <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -72,8 +72,9 @@
                         </asp:TemplateField>
                         <asp:TemplateField>
                                  <ItemTemplate>
-                                     <asp:LinkButton ID="lblEdit" runat="server"
-                                           OnClick="lblEdit_Click"
+                                     <asp:LinkButton ID="lblEdit" runat="server" CommandName="EditButton"
+                                         CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
+                                           
                                       ><img src="../images/edit.svg" /></asp:LinkButton>
                                  </ItemTemplate>
                         </asp:TemplateField>
