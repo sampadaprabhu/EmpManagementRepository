@@ -22,32 +22,76 @@ namespace EmpManagementBL
 
         public EmpManagementModel AddEmployee(EmpManagementModel empManagementModel)
         {
-            return this.empManagementRepository.AddEmployee(empManagementModel);
+            try
+            {
+                return this.empManagementRepository.AddEmployee(empManagementModel);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            
         }
 
         public bool DeleteEmployee(string EmpID)
         {
-            return this.empManagementRepository.DeleteEmployee(EmpID);
+            try
+            {
+                return this.empManagementRepository.DeleteEmployee(EmpID);
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         public EmpManagementModel UpdateEmployee(EmpManagementModel empManagementModel)
         {
-            return this.empManagementRepository.UpdateEmployee(empManagementModel);
+            try
+            {
+                return this.empManagementRepository.UpdateEmployee(empManagementModel);
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            
         }
 
         public DataSet GetAllEmployee()
         {
-            return this.empManagementRepository.GetAllEmployee();
+            try
+            {
+                return this.empManagementRepository.GetAllEmployee();
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         public EmpManagementModel GetEmployeeOnBasisfEmailID(string EmailID)
         {
-            return this.empManagementRepository.GetEmployeeOnBasisfEmailID(EmailID);
+            try
+            {
+                return this.empManagementRepository.GetEmployeeOnBasisfEmailID(EmailID);
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         public EmpManagementModel GetEmployeeOnBasisfEmpID(int EmpID)
         {
-            return this.empManagementRepository.GetEmployeeOnBasisfEmpID(EmpID);
+            try
+            {
+                return this.empManagementRepository.GetEmployeeOnBasisfEmpID(EmpID);
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }
