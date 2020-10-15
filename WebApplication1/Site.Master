@@ -42,7 +42,7 @@
                         <a ID="addEmployee" runat="server" onserverclick="btnAddEmployee_Click" class="anchor">Add Employee</a>  
                     </div>
                     <hr class="divider" />
-                    <div class="select-menu" id="selectMenuList" onclick="ChangeColorList()">
+                    <div class="select-menu-list" id="selectMenuList" onclick="ChangeColorList()">
                         <a href="/pages/listofemployees.aspx" class="anchor">Employee List</a>
                     </div>
                 </div>

@@ -79,7 +79,7 @@
                         </asp:TemplateField>
                         <asp:TemplateField>
                             <ItemTemplate>
-                                <asp:LinkButton ID="lblDelete" runat="server"
+                                <asp:LinkButton ID="lblDelete" runat="server" OnClientClick="return confirm('Are you sure to delete?')"
                                      OnClick="lblDelete_Click">
                                     <img src="../images/delete.svg">
                                 </asp:LinkButton>
