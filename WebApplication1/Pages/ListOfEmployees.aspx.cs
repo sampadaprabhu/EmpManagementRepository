@@ -30,13 +30,20 @@ namespace WebApplication1.Pages
 
         protected void lblDelete_Click(object sender, EventArgs e)
         {
-            LinkButton lnk = sender as LinkButton;
-            GridViewRow gridrow = lnk.NamingContainer as GridViewRow;
-            string emp = GridView.DataKeys[gridrow.RowIndex].Values["EmpID"].ToString();
-            IEmpManagementRepository empManagementRepository = new EmpManagementRepository();
-            EmpManagementService empManagementService = new EmpManagementService(empManagementRepository);
-            empManagementService.DeleteEmployee(emp);
-            Page.Response.Redirect(Page.Request.Url.ToString(), true);
+            try
+            {
+                LinkButton lnk = sender as LinkButton;
+                GridViewRow gridrow = lnk.NamingContainer as GridViewRow;
+                string emp = GridView.DataKeys[gridrow.RowIndex].Values["EmpID"].ToString();
+                IEmpManagementRepository empManagementRepository = new EmpManagementRepository();
+                EmpManagementService empManagementService = new EmpManagementService(empManagementRepository);
+                empManagementService.DeleteEmployee(emp);
+                Page.Response.Redirect(Page.Request.Url.ToString(), false);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         protected void GridView_RowCommand(object sender, GridViewCommandEventArgs e)

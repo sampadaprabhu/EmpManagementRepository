@@ -149,7 +149,7 @@ namespace EmpManagementRL
                             empManagementModel.FirstName = dataReader["FirstName"].ToString();
                             empManagementModel.LastName = dataReader["LastName"].ToString();
                             empManagementModel.EmailID = dataReader["EmailID"].ToString();
-                            empManagementModel.PhoneNumber = Convert.ToInt32(dataReader["PhoneNumber"]);
+                            empManagementModel.PhoneNumber = dataReader["PhoneNumber"].ToString();
                             empManagementModel.DepartmentID = Convert.ToInt32(dataReader["DepartmentID"]);
                         }
                         return empManagementModel;
@@ -187,7 +187,7 @@ namespace EmpManagementRL
                             empManagementModel.FirstName = dataReader["FirstName"].ToString();
                             empManagementModel.LastName = dataReader["LastName"].ToString();
                             empManagementModel.EmailID = dataReader["EmailID"].ToString();
-                            empManagementModel.PhoneNumber = Convert.ToInt32(dataReader["PhoneNumber"]);
+                            empManagementModel.PhoneNumber = dataReader["PhoneNumber"].ToString();
                             empManagementModel.DepartmentID = Convert.ToInt32(dataReader["DepartmentID"]);
                         }
                         return empManagementModel;

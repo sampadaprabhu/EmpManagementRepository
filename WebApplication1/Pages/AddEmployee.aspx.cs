@@ -29,7 +29,7 @@ namespace WebApplication1.Pages
                     empManagementModel.FirstName = FirstNameTextBox.Text;
                     empManagementModel.LastName = LastNameTextBox.Text;
                     empManagementModel.EmailID = EmailIDTextBox.Text;
-                    empManagementModel.PhoneNumber = Convert.ToInt32(PhoneNumberTextBox.Text);
+                    empManagementModel.PhoneNumber = PhoneNumberTextBox.Text;
                     empManagementModel.DepartmentID = Convert.ToInt32(DepartmentIDTextBox.Text);
                     IEmpManagementRepository empManagementRepository = new EmpManagementRepository();
                     EmpManagementService empManagementService = new EmpManagementService(empManagementRepository);

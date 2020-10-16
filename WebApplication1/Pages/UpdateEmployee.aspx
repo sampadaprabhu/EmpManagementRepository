@@ -115,15 +115,39 @@
                             <td></td>
                             <td style="text-align:center">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidatorPhoneNumber" runat="server"
-                                    ForeColor="Red" ErrorMessage="Phone Number is Required" ControlToValidate="PhoneNumberUpdateTextBox">
+                                    ForeColor="Red" ErrorMessage="Phone Number is Required" 
+                                    ControlToValidate="PhoneNumberUpdateTextBox">
                                 </asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidatorPhoneNumber" 
+                                        runat="server" ForeColor="Red" placeholder="Phone Number"
+                                        ErrorMessage="Invalid Phone Number" ControlToValidate="PhoneNumberUpdateTextBox"
+                                        ValidationExpression="^([6-9]{1}[0-9]{9})$">
+                                </asp:RegularExpressionValidator>
                             </td>
                         </tr>
                     </table>
                 </div>
                 <div class="update-sub-content">
-                    <asp:Label ID="DepartmentIDUpdateLabel" Text="Department ID : " runat="server" class="update-lbl-six" />
-                    <asp:TextBox ID="DepartmentIDUpdateTextBox" runat="server"  class="update-textbox-six" />
+                    <table>
+                        <tr>
+                            <td>
+                                <asp:Label ID="DepartmentIDUpdateLabel" Text="Department ID : " runat="server" class="update-lbl-six" />
+                            </td>
+                            <td>
+                                <asp:TextBox ID="DepartmentIDUpdateTextBox" runat="server"  class="update-textbox-six" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:center">
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidatorDpartmentID" 
+                                    runat="server" ForeColor="Red" 
+                                    ErrorMessage="Department ID is Required" 
+                                    ControlToValidate="DepartmentIDUpdateTextBox">
+                                </asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="update-button-div">
                     <asp:Button ID="UpdateEmpButton" Text="Update Employee" runat="server" class="update-button" OnClick="updateEmployeeClick" />

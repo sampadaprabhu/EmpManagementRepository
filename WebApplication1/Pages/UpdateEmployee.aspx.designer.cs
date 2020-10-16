@@ -159,6 +159,15 @@ namespace WebApplication1.Pages
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorPhoneNumber;
 
         /// <summary>
+        /// RegularExpressionValidatorPhoneNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorPhoneNumber;
+
+        /// <summary>
         /// DepartmentIDUpdateLabel control.
         /// </summary>
         /// <remarks>
@@ -175,6 +184,15 @@ namespace WebApplication1.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox DepartmentIDUpdateTextBox;
+
+        /// <summary>
+        /// RequiredFieldValidatorDpartmentID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorDpartmentID;
 
         /// <summary>
         /// UpdateEmpButton control.

@@ -1,3 +1,5 @@
+G:\ASP.NET\WebApplication1\WebApplication1\obj\Debug\EmployeeManagement.csprojAssemblyReference.cache
+G:\ASP.NET\WebApplication1\WebApplication1\obj\Debug\EmployeeManagement.csproj.CoreCompileInputs.cache
 G:\ASP.NET\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
 G:\ASP.NET\WebApplication1\WebApplication1\bin\WebApplication1.dll
 G:\ASP.NET\WebApplication1\WebApplication1\bin\WebApplication1.pdb
@@ -79,8 +81,6 @@ G:\ASP.NET\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
 G:\ASP.NET\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
 G:\ASP.NET\WebApplication1\WebApplication1\bin\Microsoft.AspNet.FriendlyUrls.xml
 G:\ASP.NET\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-G:\ASP.NET\WebApplication1\WebApplication1\obj\Debug\EmployeeManagement.csprojAssemblyReference.cache
-G:\ASP.NET\WebApplication1\WebApplication1\obj\Debug\EmployeeManagement.csproj.CoreCompileInputs.cache
 G:\ASP.NET\WebApplication1\WebApplication1\obj\Debug\EmployeeManagement.csproj.CopyComplete
 G:\ASP.NET\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 G:\ASP.NET\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

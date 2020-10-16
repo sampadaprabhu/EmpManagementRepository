@@ -1,3 +1,5 @@
+G:\ASP.NET\WebApplication1\EmpManagementRL\obj\Debug\EmpManagementRL.csprojAssemblyReference.cache
+G:\ASP.NET\WebApplication1\EmpManagementRL\obj\Debug\EmpManagementRL.csproj.CoreCompileInputs.cache
 G:\ASP.NET\WebApplication1\EmpManagementRL\bin\Debug\EmpManagementRL.dll
 G:\ASP.NET\WebApplication1\EmpManagementRL\bin\Debug\EmpManagementRL.pdb
 G:\ASP.NET\WebApplication1\EmpManagementRL\bin\Debug\EmpManagementML.dll
@@ -8,8 +10,6 @@ G:\ASP.NET\WebApplication1\EmpManagementRL\bin\Debug\Unity.Container.dll
 G:\ASP.NET\WebApplication1\EmpManagementRL\bin\Debug\EmpManagementML.pdb
 G:\ASP.NET\WebApplication1\EmpManagementRL\bin\Debug\Microsoft.AspNet.WebFormsDependencyInjection.Unity.xml
 G:\ASP.NET\WebApplication1\EmpManagementRL\bin\Debug\System.Data.SqlClient.xml
-G:\ASP.NET\WebApplication1\EmpManagementRL\obj\Debug\EmpManagementRL.csprojAssemblyReference.cache
-G:\ASP.NET\WebApplication1\EmpManagementRL\obj\Debug\EmpManagementRL.csproj.CoreCompileInputs.cache
 G:\ASP.NET\WebApplication1\EmpManagementRL\obj\Debug\EmpManagementRL.csproj.CopyComplete
 G:\ASP.NET\WebApplication1\EmpManagementRL\obj\Debug\EmpManagementRL.dll
 G:\ASP.NET\WebApplication1\EmpManagementRL\obj\Debug\EmpManagementRL.pdb

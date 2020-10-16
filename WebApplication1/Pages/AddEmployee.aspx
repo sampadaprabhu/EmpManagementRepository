@@ -91,9 +91,16 @@
                             <tr>
                                 <td></td>
                                 <td style="text-align:center">
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorPhoneNumber" runat="server"
-                                        ForeColor="Red" ErrorMessage="Phone Number is Required" ControlToValidate="PhoneNumberTextBox">
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorPhoneNumber" 
+                                        runat="server"
+                                        ForeColor="Red" ErrorMessage="Phone Number is Required" 
+                                        ControlToValidate="PhoneNumberTextBox">
                                     </asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidatorPhoneNumber" 
+                                        runat="server" ForeColor="Red" placeholder="Phone Number"
+                                        ErrorMessage="Invalid Phone Number" ControlToValidate="PhoneNumberTextBox"
+                                        ValidationExpression="^([6-9]{1}[0-9]{9})$">
+                                    </asp:RegularExpressionValidator>
                                 </td>
                             </tr>
                         </table>
