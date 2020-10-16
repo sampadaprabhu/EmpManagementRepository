@@ -19,12 +19,19 @@ namespace WebApplication1.Pages
         {
             if (!Page.IsPostBack)
             {
-                IEmpManagementRepository empManagementRepository = new EmpManagementRepository();
-                EmpManagementService empManagementService = new EmpManagementService(empManagementRepository);
-                DataSet dataSet = new DataSet();
-                dataSet = empManagementService.GetAllEmployee();
-                GridView.DataSource = dataSet;
-                GridView.DataBind();
+                try
+                {
+                    IEmpManagementRepository empManagementRepository = new EmpManagementRepository();
+                    EmpManagementService empManagementService = new EmpManagementService(empManagementRepository);
+                    DataSet dataSet = new DataSet();
+                    dataSet = empManagementService.GetAllEmployee();
+                    GridView.DataSource = dataSet;
+                    GridView.DataBind();
+                }
+                catch(Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
             }
         }
 
@@ -50,9 +57,16 @@ namespace WebApplication1.Pages
         {
             if(e.CommandName== "EditButton")
             {
-                int index = Convert.ToInt32(e.CommandArgument);
-                string emp = GridView.DataKeys[index].Values["EmpID"].ToString();
-                Response.Redirect("~/Pages/UpdateEmployee.aspx?EmpID=" + emp);
+                try
+                {
+                    int index = Convert.ToInt32(e.CommandArgument);
+                    string emp = GridView.DataKeys[index].Values["EmpID"].ToString();
+                    Response.Redirect("~/Pages/UpdateEmployee.aspx?EmpID=" + emp, false);
+                }
+                catch(Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
             }
         }
     }

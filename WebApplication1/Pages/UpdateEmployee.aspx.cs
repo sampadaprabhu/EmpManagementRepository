@@ -61,15 +61,22 @@ namespace WebApplication1.Pages
 
         protected void BindTextBoxValues(int EmpID)
         {
-            IEmpManagementRepository empManagementRepository = new EmpManagementRepository();
-            EmpManagementService empManagementService = new EmpManagementService(empManagementRepository);
-            EmpManagementModel empManagementModel=empManagementService.GetEmployeeOnBasisfEmpID(EmpID);
-            EmpIDUpdateTextBox.Text = empManagementModel.EmpID.ToString();
-            FirstNameUpdateTextBox.Text = empManagementModel.FirstName;
-            LastNameUpdateTextBox.Text = empManagementModel.LastName;
-            EmailIDUpdateTextBox.Text = empManagementModel.EmailID;
-            PhoneNumberUpdateTextBox.Text = empManagementModel.PhoneNumber.ToString();
-            DepartmentIDUpdateTextBox.Text = empManagementModel.DepartmentID.ToString();
+            try
+            {
+                IEmpManagementRepository empManagementRepository = new EmpManagementRepository();
+                EmpManagementService empManagementService = new EmpManagementService(empManagementRepository);
+                EmpManagementModel empManagementModel = empManagementService.GetEmployeeOnBasisfEmpID(EmpID);
+                EmpIDUpdateTextBox.Text = empManagementModel.EmpID.ToString();
+                FirstNameUpdateTextBox.Text = empManagementModel.FirstName;
+                LastNameUpdateTextBox.Text = empManagementModel.LastName;
+                EmailIDUpdateTextBox.Text = empManagementModel.EmailID;
+                PhoneNumberUpdateTextBox.Text = empManagementModel.PhoneNumber.ToString();
+                DepartmentIDUpdateTextBox.Text = empManagementModel.DepartmentID.ToString();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

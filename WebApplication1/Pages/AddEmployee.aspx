@@ -118,8 +118,10 @@
                             <tr>
                                 <td></td>
                                 <td style="text-align:center">
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorDpartmentID" runat="server"
-                                        ForeColor="Red" ErrorMessage="Department ID is Required" ControlToValidate="DepartmentIDTextBox">
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorDpartmentID" 
+                                        runat="server"
+                                        ForeColor="Red" ErrorMessage="Department ID is Required" 
+                                        ControlToValidate="DepartmentIDTextBox">
                                     </asp:RequiredFieldValidator>
                                 </td>
                             </tr>
