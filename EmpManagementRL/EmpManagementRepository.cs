@@ -30,7 +30,8 @@ namespace EmpManagementRL
                     command.Parameters.AddWithValue("@DepartmentID", empManagementModel.DepartmentID);
                     this.connection.Open();
                     var result = command.ExecuteNonQuery();
-                    if (result > 0)
+                    this.connection.Close();
+                    if (result != 0)
                     {
                         return this.GetEmployeeOnBasisfEmailID(empManagementModel.EmailID);
                     }

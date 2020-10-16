@@ -21,7 +21,6 @@ namespace WebApplication1.Pages
             {
                 IEmpManagementRepository empManagementRepository = new EmpManagementRepository();
                 EmpManagementService empManagementService = new EmpManagementService(empManagementRepository);
-
                 DataSet dataSet = new DataSet();
                 dataSet = empManagementService.GetAllEmployee();
                 GridView.DataSource = dataSet;

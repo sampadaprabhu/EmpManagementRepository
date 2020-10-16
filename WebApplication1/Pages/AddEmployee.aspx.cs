@@ -44,8 +44,7 @@ namespace WebApplication1.Pages
             else
             {
                 Response.Write("<script>alert('All Fields Are Mandatory')</script>");
-            }
-            
+            }  
         }
     }
 }

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 
 <html class="table-html">
-<body class="table-body">
+    <body class="table-body">
         <div class="tbl-form-div">
             <div class="table-data">
                 <asp:GridView ID="GridView" class="gridView" runat="server" 
@@ -62,9 +62,9 @@
                         <asp:TemplateField>
                                  <ItemTemplate>
                                      <asp:LinkButton ID="lblEdit" runat="server" CommandName="EditButton"
-                                         CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
-                                           
-                                      ><img src="../images/edit.svg" /></asp:LinkButton>
+                                         CommandArgument="<%# ((GridViewRow) Container).RowIndex %>">
+                                         <img src="../images/edit.svg" />
+                                     </asp:LinkButton>
                                  </ItemTemplate>
                         </asp:TemplateField>
                         <asp:TemplateField>
@@ -79,7 +79,7 @@
                 </asp:GridView>    
             </div>
         </div>
-</body>
+    </body>
 </html>
 
 </asp:Content>
