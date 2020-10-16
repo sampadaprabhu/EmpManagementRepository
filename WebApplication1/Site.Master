@@ -12,20 +12,11 @@
     <link rel="stylesheet" href="/Content/CSS/UpdateEmployee.css" type="text/css" />
     <link rel="stylesheet" href="/Content/CSS/ListOfEmployees.css" type="text/css" />
     <script>
-        //function EditPop() {
-        //    window.open('Pages/UpdateEmployee.aspx')
-        //}
         function ChangeColor() {
-            //document.getElementById('selectMenuAdd').style.backgroundColor = '#000000';
-            //document.getElementById('selectMenuAdd').style.height = '70px';
-            //document.getElementById('selectMenuAdd').style.borderRadius = '0px 30px 30px 0px';
             document.getElementById("selectMenuAdd").className = "side-nav-color-change";
         }
 
         function ChangeColorList() {
-            //document.getElementById('selectMenuList').style.backgroundColor = '#000000';
-            //document.getElementById('selectMenuList').style.height = '70px';
-            //document.getElementById('selectMenuList').style.borderRadius = '0px 30px 30px 0px';
             document.getElementById("selectMenuList").className = "side-nav-color-change";
         }
     </script>

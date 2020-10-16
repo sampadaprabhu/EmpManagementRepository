@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../content/css/updateemployee.css" type="text/css" />
 </head>
 <body class="update-body">
-    <%--<form id="form1" runat="server" class="update-form">--%>
     <div class="update-main-div">
         <div class="update-header">
             <h2 class="update-header-content">Update Employee</h2>
@@ -132,7 +131,6 @@
             </div>
         </div>
     </div>
-    <%--</form>--%>
 </body>
 </html>
 </asp:Content>

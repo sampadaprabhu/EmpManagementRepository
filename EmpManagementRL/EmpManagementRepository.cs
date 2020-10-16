@@ -15,7 +15,6 @@ namespace EmpManagementRL
     {
         static string connect = ConfigurationManager.ConnectionStrings["conStr"].ConnectionString;
         SqlConnection connection = new SqlConnection(connect);
-        //SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=EmployeeManagement;Integrated Security=True");
         public EmpManagementModel AddEmployee(EmpManagementModel empManagementModel)
         {
             try
@@ -127,10 +126,6 @@ namespace EmpManagementRL
             catch(Exception e)
             {
                 throw new Exception(e.Message);
-            }
-            finally
-            {
-                //this.connection.Close();
             }
         }
 

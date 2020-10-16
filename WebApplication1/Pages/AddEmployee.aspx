@@ -6,12 +6,8 @@
 <!DOCTYPE html>
 
 <html class="add-html">
-<%--<head runat="server">
-    <title></title>
-    <link rel="stylesheet" href="../Content/CSS/AddEmployee.css" type="text/css" />
-</head>--%>
+
 <body class="add-body">
-    <%--<form id="form1" runat="server" class="add-form">--%>
         <div class="add-form-div" style="height:727px;">
             <div class="add-header">
                 <h2 class="add-header-content">Add New Employee</h2>
@@ -132,7 +128,6 @@
                 </div>
             </div>
         </div>
-    <%--</form>--%>
 </body>
 </html>
 </asp:Content>

@@ -4,22 +4,11 @@
 <!DOCTYPE html>
 
 <html class="table-html">
-<%--<head runat="server">
-    <title></title>
-    <link rel="stylesheet" href="../Content/CSS/ListOfEmployees.css" type="text/css" />
-</head>--%>
-
 <body class="table-body">
-    <%--<form id="form1" runat="server" class="table-form">--%>
         <div class="tbl-form-div">
-            <%--<div class="header-tbl">
-                <h2 class="tbl-header-content">List Of Employees</h2>
-            </div>--%>
             <div class="table-data">
                 <asp:GridView ID="GridView" class="gridView" runat="server" 
-                    OnRowEditing="GridView_RowEditing" 
-                    OnRowUpdating="GridView_RowUpdating" 
-                    DataKeyNames="EmpID" OnRowDeleting="GridView_RowDeleting" 
+                    DataKeyNames="EmpID"
                     AutoGenerateColumns="false" ForeColor="#333333" 
                     GridLines="None" OnRowCommand="GridView_RowCommand">
                     <AlternatingRowStyle BackColor="White" />
@@ -86,13 +75,10 @@
                                 </asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <%--<asp:commandfield showdeletebutton="true" />--%>
                     </Columns>
-                </asp:GridView>
-                
+                </asp:GridView>    
             </div>
         </div>
-    <%--</form>--%>
 </body>
 </html>
 

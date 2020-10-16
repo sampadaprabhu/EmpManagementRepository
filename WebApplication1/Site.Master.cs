@@ -18,7 +18,6 @@ namespace WebApplication1
         protected void btnAddEmployee_Click(object sender, EventArgs e)
         {
             Response.Redirect("AddEmployee.aspx");
-           // Server.Transfer("AddEmployee.aspx");
         }
 
         protected void btnEmployeeList_Click(object sender, EventArgs e)
